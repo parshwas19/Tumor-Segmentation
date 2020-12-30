@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Advanced Search    
+        </title>
+        <style>
+            a{
+                float: right;
+                padding: 10px;
+                margin-right: 20px;
+                font-size: 20px;
+                text-decoration: none;
+
+            }
+            h2{
+                text-align: center;
+                margin-top: 20px;
+                padding: 20px;
+                color: rgb(9, 196, 149);
+
+            }
+            hr{
+                color: lightgray;
+            }
+            div{
+                padding: 10px;
+            }
+            label{
+                position:absolute;
+            }
+            input[type="text"]{
+                position: relative; 
+                left: 200px;
+                width: 400px;
+
+            }
+            input[type="submit"]{
+                padding: 10px ;
+                margin: 15px;
+            }
+            input[type="submit"]:hover{
+                background-color:lightgreen;
+            }
+        </style>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    </head>
+    <body>
+        <a href="index.html"> Back to Google Search</a>
+        <h2>Advanced Search</h2>
+        <hr>
+        <form action="https://www.google.com/search">
+            <h4>
+                Find pages with...
+            </h4>
+            <div><label>all these words:            </label><input type="text" name="as_q" ></div>
+            <div><label>this exact word or phrase:</label><input type="text" name="as_epq"></div>
+            <div><label>any of these words</label><input type="text" name="as_oq"></div>
+            <div><label>none of these words: </label><input type="text" name="as_eq"></div>
+            <input type="submit" value="Advanced Search Button">
+            </form>
+    </body>
+</html>
